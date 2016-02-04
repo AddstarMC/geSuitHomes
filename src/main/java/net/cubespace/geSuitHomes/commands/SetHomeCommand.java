@@ -19,7 +19,7 @@ public class SetHomeCommand implements CommandExecutor {
 		if(args.length==0){
 			HomesManager.setHome(sender, "home");
 		}else{
-			Pattern invalidChar = Pattern.compile("[^a-zA-Z0-9_äöüßÄÖÜ]");
+			Pattern invalidChar = Pattern.compile("[^a-zA-Z0-9_äöüßÄÖÜ-]");
 			Matcher reMatch = invalidChar.matcher(args[0]);
 
 			StringBuffer bufstr = new StringBuffer();
