@@ -4,7 +4,7 @@
 
     <groupId>net.cubespace</groupId>
     <artifactId>geSuitHomes</artifactId>
-    <version>0.1.2-SNAPSHOT</version>
+    <version>0.2-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>geSuitHomes</name>
 
@@ -12,7 +12,8 @@
         <build.number />
         <plugin.version>${project.version}-${build.number}</plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spigot.version>1.12.2-R0.1-SNAPSHOT</spigot.version>
+        <spigot.api.version>1.13</spigot.api.version>
+        <spigot.version>${spigot.api.version}-R0.1-SNAPSHOT</spigot.version>
     </properties>
     <scm>
         <connection>scm:git:git@github.com:AddstarMC/geSuitHomes.git</connection>
@@ -52,7 +53,7 @@
         </repository>
         <repository>
           <id>addstar-snapshot-repo</id>
-          <url>http://maven.addstar.com.au/artifactory/ext-snapshot-local</url>
+          <url>http://maven.addstar.com.au/artifactory/all-snapshot</url>
           <snapshots>
           	<enabled>true</enabled>
           </snapshots>

@@ -11,6 +11,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class geSuitHomes extends JavaPlugin {
 	public static geSuitHomes instance;
+	public static String CHANNEL_NAME = "bungeecord:geSuitHomes";
 
 	@Override
 	public void onEnable() {
@@ -29,7 +30,7 @@ public class geSuitHomes extends JavaPlugin {
 	}
 
 	private void registerChannels() {
-		Bukkit.getMessenger().registerOutgoingPluginChannel(this, "geSuitHomes");
+		Bukkit.getMessenger().registerOutgoingPluginChannel(this, CHANNEL_NAME);
 	}
 
 	private void registerListeners() {
