@@ -11,7 +11,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class geSuitHomes extends JavaPlugin {
 	public static geSuitHomes instance;
-	public static String CHANNEL_NAME = "bungeecord:geSuitHomes";
+	public static String CHANNEL_NAME = "bungeecord:gesuithomes";
 
 	@Override
 	public void onEnable() {
